@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Oswald:wght@200..700&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    color: rgb(224, 232, 9);
+    font-family: "Oswald";
+    text-decoration: none;
+    font-size: 1.2rem;
+    /* transition: all 0.4s; */
+}
+header{
+    background-image: url(../imgs/gym5.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+span{
+    color: red;
+}
+.col{
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+}
+.col a:hover{
+    background: red;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 0.4s;
+}
+
+.logo{
+    padding: 25px;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+
+}
+.card{
+    background:white;
+    height: 400px;
+    width: 200px;  
+
+}
+.card img{
+    object-position: 50% 40%;
+    object-fit: cover;
+}
+.container{
+    width: 200px;
+
+    
+}
+#feature{
+    background-image: url(../imgs/gym6.jpg);
+    background-position:50% 70% ;
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+    
+
+}
+
+.container h1{
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+} 
+.container p{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+
+.bla{
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.image{
+    background-image: url(../imgs/gym4.jpg);
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 20%;
+
+}
+.content{
+    background: #000;
+    width: 50%;
+    height: 100vh;
+    
+}
+#about{
+    display: flex;
+}
+.content h1{
+    text-align: center;
+    padding: 100px 0;
+    color: #0059D3;
+    font-size: 2rem;
+}
+.content p{
+    color: red;
+    font-size: .9rem;
+    padding: 20px;
+    text-align: center;
+}
+#gallery{
+    display: grid;
+    place-items: center;
+    height: auto;
+    width: 100vw;
+    background: white;
+
+    h1{
+        font-size: 4rem;
+        color: #000;
+        margin: 2rem 0;
+    }
+    .photo-container{
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        flex-wrap: wrap;
+
+        .photo{
+            height: 10rem;
+            width:  15rem;
+            margin: 2rem;
+            overflow: hidden;
+            position: relative;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media(max-width:980px){
+    #gallery {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+}
+    
+@media(max-width:780px){
+    .content {
+            font-size: .5rem;
+            height: 100vh;
+            width: 100vw;
+        }
+        #about{
+            flex-flow: column;
+        }
+        .image{
+            width: 100vw;
+        }
+
+        #gallery{
+            h1{
+                font-size: 2rem;
+            }
+        }
+}
+
+
+
+
+
+
+@media(max-width:600px) {
+    nav {
+        height: 80px;
+        padding: 0 40px;
+    }
+    
+.logo{
+    position: absolute;
+    left: 35%;
+}
+.col{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 100px 0;
+}
+.col a {
+    border:solid red;
+    display: block;
+    padding: 10px 0;
+    border-radius: 20px;
+    transition: all 0.4s;
+
+    &:hover{
+        background: red;
+    }
+}
+
+.card-container{
+    flex-wrap: wrap;
+}
+#feature{
+    height: 100%;
+}
+.main{
+    flex-flow: column;
+    
+    box-1{
+        width:100vw;
+        height: 200px;
+    }
+}
+.content p{
+    font-size: 0.7rem;
+    height: 100%;
+    width: 100vw;
+}
+#about{
+    flex-flow: column;
+}
+.content{
+    background: #000;
+    height: 100vh;
+    width: 100vw;
+}
+.image{
+    width: 100vw;
+    height: 100vh;
+}
+
+}
